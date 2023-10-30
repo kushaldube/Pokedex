@@ -1,0 +1,9 @@
+.PokemonList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  --x: 3em;
+  --y: 3em;
+  padding: var(--y) var(--x);
+  gap: var(--y) var(--x);
+}

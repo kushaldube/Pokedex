@@ -1,0 +1,15 @@
+.Header {
+  background-color: #f6f8fa;
+  padding: 1em;
+  box-shadow: 0 8px 6px -6px lightgray;
+  display: flex;
+  display: row;
+  gap: 4em;
+  align-items: center;
+}
+
+.region-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}

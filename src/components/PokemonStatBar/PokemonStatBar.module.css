@@ -1,0 +1,25 @@
+.PokemonStatBar {
+  height: 1em;
+  width: 200px;
+  background-color: #faf9f5;
+}
+
+.fill {
+  height: 100%;
+  background-color: green;
+  animation: filling 0.5s ease-in-out;
+}
+
+.PokemonStatBar,
+.fill {
+  border-radius: 18px;
+}
+
+@keyframes filling {
+  from {
+    width: 0%;
+  }
+  to {
+    width: attr(data-value);
+  }
+}

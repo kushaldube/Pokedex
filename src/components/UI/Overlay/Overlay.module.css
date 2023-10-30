@@ -1,0 +1,18 @@
+.Overlay {
+  position: fixed;
+  width: 80%;
+  left: 10%;
+  right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: slide-up 300ms ease-out;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(calc(-50% + 3em));
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}

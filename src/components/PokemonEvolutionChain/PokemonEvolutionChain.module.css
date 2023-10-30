@@ -1,0 +1,19 @@
+.PokemonEvolutionChain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+.right-arrow {
+  --size: 10px;
+  --width: 2px;
+  --color: #000;
+
+  width: var(--size);
+  height: var(--size);
+  border-top: var(--width) solid var(--color);
+  border-left: var(--width) solid var(--color);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}

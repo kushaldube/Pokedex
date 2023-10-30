@@ -1,0 +1,49 @@
+.PokemonCard {
+  display: flex;
+  flex-direction: row;
+  height: 175px;
+  cursor: pointer;
+}
+
+.information,
+.sprite,
+.sprite--skeleton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.sprite--skeleton {
+  flex-direction: row;
+  align-items: center;
+}
+
+.information,
+.types {
+  gap: 0.5em;
+}
+
+.types {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.type {
+  border-radius: 4px;
+  width: min-content;
+  padding: 0.5em;
+}
+
+.pokemon-sprite {
+  object-fit: contain;
+  width: 100%;
+  height: 75%;
+}
+
+.pokemon-sprite--skeleton {
+  position: absolute;
+  right: 0;
+}

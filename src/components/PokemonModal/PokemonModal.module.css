@@ -1,0 +1,83 @@
+.PokemonModal {
+  display: flex;
+  flex-direction: row;
+  padding: 1em; /* Override */
+}
+
+.information,
+.sprite {
+  display: flex;
+  flex-direction: column;
+}
+
+.information {
+  width: 60%;
+  padding: 1em;
+}
+
+.pokemon-id {
+  font-weight: bold;
+}
+
+.sprite {
+  justify-content: center;
+  width: 40%;
+  text-align: center;
+}
+
+.pokemon-sprite {
+  object-fit: contain;
+  animation: breathing 5s infinite;
+  cursor: pointer;
+  padding: 1em;
+  height: 75%;
+}
+
+.japanese-name,
+.romaji-name,
+.description {
+  color: gray;
+}
+
+.romaji-name {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.row-label {
+  padding-right: 2.5em;
+  color: gray;
+}
+
+.row-data {
+  padding-right: 1.25em;
+}
+
+.section-header {
+  margin-bottom: 0.5em;
+}
+
+.section {
+  margin-bottom: 1em;
+}
+
+@keyframes breathing {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(3em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

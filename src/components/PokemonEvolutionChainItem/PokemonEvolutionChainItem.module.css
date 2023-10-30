@@ -1,0 +1,31 @@
+.PokemonEvolutionChainItem {
+  --size: 85px;
+  width: var(--size);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-sprite {
+  object-fit: contain;
+  cursor: pointer;
+
+  /* Initial state set to the start of the animation */
+  opacity: 0;
+  transform: translateX(-1em);
+
+  animation: slide-in 0.25s ease-in-out forwards;
+}
+
+.sprite-label {
+  font-size: 14px;
+  color: gray;
+}
+
+@keyframes slide-in {
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
